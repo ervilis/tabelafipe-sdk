@@ -2,6 +2,11 @@
 """Módulo de comunicação com o site oficial da tabela fipe."""
 
 
+TIPO_CARRO = 1
+TIPO_MOTO = 2
+TIPO_CAMINHAO = 3
+
+
 class Interface(object):
 
     """Interface de comunicação com os endpoints de acesso aos dados."""
