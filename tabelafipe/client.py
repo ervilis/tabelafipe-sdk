@@ -7,9 +7,9 @@ TIPO_MOTO = 2
 TIPO_CAMINHAO = 3
 
 
-class Interface(object):
+class Client(object):
 
-    """Interface de comunicação com os endpoints de acesso aos dados."""
+    """Cliente de comunicação com os endpoints de acesso aos dados."""
 
     tipo_veiculo = None
 
@@ -17,7 +17,7 @@ class Interface(object):
 
     def __init__(self, tipo_veiculo, tabela_referencia=None):
         """
-        Inicializamos a interface com o tipo de veículo que será consultado
+        Inicializamos o cliente com o tipo de veículo que será consultado
         pois essa informação é utilizada em todos os endpoints. Recebemos
         também opcionalmente a tabela de referência pois esse parâmetro não é
         necessário em todos os métodos.

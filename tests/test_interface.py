@@ -1,10 +1,10 @@
 # coding=utf-8
 import unittest
-from tabelafipe.interface import *
+from tabelafipe.client import *
 
 
-class InterfaceTestCase(unittest.TestCase):
+class ClientTestCase(unittest.TestCase):
 
     def test_instance(self):
-        instance = Interface(TIPO_CARRO)
-        self.assertIsInstance(instance, Interface)
+        instance = Client(TIPO_CARRO)
+        self.assertIsInstance(instance, Client)
